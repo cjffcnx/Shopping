@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Hamle yaha class jasto banayem ke dark ko lagi jata jata dark chahiyeko cha we are doing like this */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: #f59e0b;
+}
+
+@layer components {
+    .primary-btn {
+        @apply bg-primary rounded-xl font-semibold px-5 py-2 capitalize hover:bg-orange-700
+    }
+
+    .section-btn {
+        @apply bg-primary px-9 py-2 rounded-full text-lg text-white
+    }
+
+    .secondary-btn {
+        @apply px-5 py-2 border-white border-2 rounded-md hover:bg-white text-white hover:text-black duration-500
+    }
+}
