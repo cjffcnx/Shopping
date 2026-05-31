@@ -38,12 +38,14 @@ const Navbar = () => {
                 </div>
 
                 {/* Bottom ko lagi arko div --Navbar*/}
-                <div className=' container flex items-center justify-between gap-6 dark:bg-black dark:text-white'> <div><img src={Logo} alt="Logo" className='w-20 h-16' /></div>
+
+                <div className="dark:bg-black dark:text-white">
+                <div className=' container flex items-center justify-between gap-6  '> <div><img src={Logo} alt="Logo" className='w-20 h-16' /></div>
                     <div className="flex flex-1 items-center justify-end">
 
                         {/* Aba yehi navbar ko bottom bhitra rahera euta naya div mah navLinks haru tannu parne cha */
 
-                            <div className="flex flex-1">
+                            <div className="flex flex-1 items-center w-full">
                                 <ul className='hidden md:flex w-full items-center justify-end gap-5 h-full'>
                                     {/* div ko unordered list bhitra navlink lai curly braches mah lekhne */}
 
@@ -78,7 +80,7 @@ const Navbar = () => {
                             )}
                         </div>
 
-
+</div>
                     </div>
 
 
