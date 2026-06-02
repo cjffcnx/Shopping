@@ -6,7 +6,7 @@ const Darkmode = () => {
     // Hami js chai curly braces ra return ko bich mah lekhchum hai
 
     // initial value/ updated value agadi initial value ani pachadi updated value
-    const [theme, setTheme] = useState("light")
+    const [theme, setTheme] = useState(() => localStorage.getItem("theme") ?? "light")
 
     // Use state le chai ke kaam garcha bhane yesle chai component lai render garaune kaam garchai hai render ko meaning maile javascript ma 1+1 garey 2 aye tesma mmaile euta button banaye tema harek choti button click garda  increment hunu paryo so tara tyo mero ke mah show garcha terminal mah matrai show garcha hola ni tah tehi terminal ko kura browser mah dekhaunu parey hami useState use garcham
 
@@ -23,7 +23,7 @@ const Darkmode = () => {
 
 
     // Aba mah theme ko lagi local storage use garchu maile paila theme banako chu ki chuina check garchu yedi already theme banako cha bhane tyo theme lai set garchu haina maile theme banako chaina bhane default mah light set hunu paryo ni
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+    
 
 
     // So malai aba bhannu useEffect bhaneko chai ke ho 
